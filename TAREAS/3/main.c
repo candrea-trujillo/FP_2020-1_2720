@@ -1,19 +1,18 @@
 #include<stdio.h>
-int main(){
-	float x, y, z;
-	printf("Ingresa un numero:\n");
-	scanf("%f", &x);
-	printf("Ingrese un segundo numero:\n");
-	scanf("%f", &y);
-
-		z=x+y;
-		printf("suma: %.2f\n", z);
-		z=x-y;
-		printf("resta: %.2f\n", z);
-		z=x*y;
-		printf("multiplicacion: %.2f\n", z);
-		z=x/y;
-		printf("division: %.2f", z);
+#include<stdlib.h>
+int main(int argc, char * argv[])
+{
+	double x, y, z, w;
+	x=atof(argv[1]);
+	y=atof(argv[2]);
+	z= x + y;
+	printf("%.2lf\n", z);
+	z= x - y;
+	printf("%.2lf\n", z);
+	w= x * y;
+	printf("%.2lf\n", w);
+	w= x / y;
+	printf("%.2lf\n", w);
 
 	return 0;
 }
